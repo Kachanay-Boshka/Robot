@@ -1,0 +1,9 @@
+@startuml
+Client -> Robot : start()
+Robot -> Engine : On()
+Robot -> Camera : detectGraf()
+Camera-> Robot : Move()
+Robot -> SpreyGun : CleanGraf()
+Client -> Robot : stop()
+Robot -> Engine : Off()
+@enduml
